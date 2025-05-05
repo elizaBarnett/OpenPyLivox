@@ -174,12 +174,12 @@ def singleSensorDemo():
         # convert BINARY point data to LAS file and IMU data (if applicable) to CSV file
         # only works in conjunction with .dataStart_RT_B()
         # designed so the efficiently collected binary point data can be converted to LAS at any time after data collection
-        opl.convertBin2LAS(filePathAndName, deleteBin=True)
+        #opl.convertBin2LAS(filePathAndName, deleteBin=True)
 
         # convert BINARY point data and IMU data (if applicable) to CSV files
         # only works in conjunction with .dataStart_RT_B()
         # designed so the efficiently collected binary data can be converted to CSV at any time after data collection
-        # opl.convertBin2CSV(filePathAndName, deleteBin=True)
+        opl.convertBin2CSV(filePathAndName, deleteBin=True)
 
     else:
         print("\n***** Could not connect to a Livox sensor *****\n")
